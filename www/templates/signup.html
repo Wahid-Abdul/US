@@ -1,10 +1,10 @@
 <ion-view view-title="Sign Up">
-    <ion-content>
+    <ion-content style="background:  url('img/farm2.jpg') rgba(1, 1, 1,0.8); background-position: center;background-size:cover  " class="blackcover">
         <div class="list">
             <!-- <form onsubmit="togglePassword()"> -->
             <div class="inputClass" style="margin-top:20vh">
-                <label class="item item-input inputClass">
-                        <span style="width: 10%;border-color: black" class="ion ion-android-lock"></span>
+                <label class="item item-input inputClass" style="border-top-right-radius: 10px;border-top-left-radius: 10px;">
+                        <span style="width: 10%;border-color: black" class="ion ion-ios-body"></span>
                         <input type="text" ng-model="loginData.username" placeholder="User Name">
                 </label>
                 <label class="item item-input inputClass">
@@ -23,8 +23,19 @@
                     <input type="password"  placeholder="Repeat password" id="password2">
                     <!--<button  style="height:100%;width: 10%;border:2px solid red" id="password12">kjh</button>-->
                 </label>
+                <label class="item item-input item-select inputClass" style="border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;">
+                        <span style="width: 10%;border-color: black" class="ion ion-person-stalker"></span>
+
+                    <div class="input-label">
+                      Role
+                    </div>
+                    <select>
+                      <option>Farmer</option>
+                      <option selected>Buyer</option>
+                    </select>
+                  </label>
                 <label class="inputClass">
-                <button class="button button-block button-positive inputClass" type="submit" onclick="togglePassword()"  id="password11" >Sign Up{{test}}</button>
+                <button class="button button-block button-positive inputClass" type="submit" onclick="togglePassword()"  id="password11" >Sign Up</button>
                 </label>
             </div>
             <!-- </form> -->
